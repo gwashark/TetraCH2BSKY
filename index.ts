@@ -36,6 +36,7 @@ async function main(): Promise<void> {
   const data: any = response.data;
   const news: any[] = data.data.news;
   if (!fs.existsSync("cache.json")) {
+    console.log(`No cache found, creating new cache...`)
     fs.writeFileSync("cache.json", JSON.stringify(news));
     setTimeout(main, 7200000);
     return;
@@ -63,6 +64,7 @@ async function main(): Promise<void> {
     }
   }
   fs.writeFileSync("cache.json", JSON.stringify(news));
+  console.log("Updated cache.");
   setTimeout(main, 7200000);
 }
 
