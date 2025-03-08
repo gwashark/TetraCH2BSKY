@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@atproto/api": "^0.14.9",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "type": "module",
+  "name": "tetrach2bsky",
+  "version": "1.0.0",
+  "description": "Tetri Channel to Bluesky",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwashark"
+  },
+  "keywords": [
+    "tetrio",
+    "tetrach",
+    "bluesky",
+    "bsky"
+  ],
+  "author": "GwaShark",
+  "license": "ISC"
+}
