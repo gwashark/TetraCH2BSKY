@@ -51,12 +51,12 @@ async function main(): Promise<void> {
       const current: any = newNews[i];
       if (current.type === "leaderboard") {
         await agent.post({
-          text: `🏆 - ${current.data.username} made #${current.data.rank} place on ${current.data.gametype}!\n\n#tetrio\n#https://tetr.io/#R:${current.data.replayid}`,
+          text: `🏆 - ${current.data.username} made #${current.data.rank} place on ${current.data.gametype}!\n\n#tetrio #tetris\n#https://tetr.io/#R:${current.data.replayid}`,
         });
         console.log(`Posted leaderboard news for ${current.data.username}`);
       } else if (current.type === "badge") {
         await agent.post({
-          text: `🎖️ - ${current.data.username} earned the ${current.data.label} badge!\n\n#tetrio`,
+          text: `🎖️ - ${current.data.username} earned the ${current.data.label} badge!\n\n#tetrio #tetris`,
         });
         console.log(`Posted badge news for ${current.data.username}`);
       }
